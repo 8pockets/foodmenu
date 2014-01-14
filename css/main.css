@@ -1,0 +1,50 @@
+.ui-content{
+	/*background-image: url(../img/p23.jpg) !important;
+	background-repeat: repeat;
+	*/
+	background-color:#ecf0f1 !important;
+}
+#foursquare > div{
+	float:left;
+	margin:3px;
+	width: 148px;
+}
+.image img{
+	width:148px;
+	height:148px;
+}
+.ui-content{
+	padding:1em 4px !important;
+}
+.place-name{
+	float:left;
+	font-size:9px;
+	padding: 2px 1px 2px 3px;
+	background-color: #fff;
+	color: #6e6e6e;
+	width: 144px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+}
+.place-distance{
+	float: left;
+	width: 65px;
+	/*font-size:10px;*/
+	background-image: url(../img/distance.png);
+	background-repeat:no-repeat;
+	background-position: 0px 3px;
+	text-align: right;
+}
+.place-count{
+	float: right;
+	/*font-size:10px;*/
+	margin: 0 10px 0 0;
+	background-image: url(../img/count.png);
+	background-repeat:no-repeat;
+	background-position: 0px 3px;
+	width: 56px;
+	text-align: right;
+}
