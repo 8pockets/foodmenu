@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bootstrap jQuery Mobile Theme
 
 A jQuery Mobile theme based on Bootstrap.
@@ -18,3 +19,9 @@ Make your Bootstrap theme complete by using Font Awesome icons found in the [jQu
 ![Swatches D - F](http://andymatthews.net/code/jQuery-Mobile-Bootstrap-Theme/swatches-D-F.png?)
 
 &copy; Bootstrap
+=======
+###http://8pockets.com/food/
+
+##foursquare APIから作成した近くの飲食店を調べるアプリ。
+その場所に何人行ったかが、一目で分かるから選びやすいかも。
+>>>>>>> origin/master
