@@ -1,7 +1,4 @@
 .ui-content{
-	/*background-image: url(../img/p23.jpg) !important;
-	background-repeat: repeat;
-	*/
 	background-color:#ecf0f1 !important;
 }
 #foursquare > div{
@@ -31,7 +28,7 @@
 }
 .place-distance{
 	float: left;
-	width: 65px;
+	width: 60px;
 	/*font-size:10px;*/
 	background-image: url(../img/distance.png);
 	background-repeat:no-repeat;
