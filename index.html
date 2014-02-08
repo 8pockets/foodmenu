@@ -15,17 +15,18 @@
 			<div data-role="header" data-position="inline">
 				<h1>Food MENU</h1>
 				<div data-role="navbar">
-					<ul>
-						<li><a href="javascript:void(0)" data-icon="home" data-ajax="false" onclick="overview('4d4b7105d754a06374d81259')" class="ui-btn-active">All</a></li>
-						<li><a href="javascript:void(0)" data-icon="star" data-ajax="false" onclick="overview('4bf58dd8d48988d1c4941735')">レストラン</a></li>
+					<ul id="navi">
+						<li><a href="javascript:void(0)" data-icon="home" data-ajax="false" onclick="overview('4d4b7105d754a06374d81259')">All</a></li>
+						<li><a href="javascript:void(0)" data-icon="shop" data-ajax="false" onclick="overview('4bf58dd8d48988d1c4941735')">Dining</a></li>
 						<li><a href="javascript:void(0)" data-icon="star" data-ajax="false" onclick="overview('4bf58dd8d48988d1d1941735')">麺</a></li>
-						<li><a href="javascript:void(0)" data-icon="star" data-ajax="false" onclick="overview('4bf58dd8d48988d16d941735')">Cafe</a></li>
-						<li><a href="javascript:void(0)" data-icon="star" data-ajax="false" onclick="overview('4d4b7105d754a06376d81259')">Bar</a></li>
+						<li><a href="javascript:void(0)" data-icon="comment" data-ajax="false" onclick="overview('4bf58dd8d48988d16d941735,4bf58dd8d48988d128941735,4bf58dd8d48988d1dc931735')">Cafe</a></li>
+						<li><a href="javascript:void(0)" data-icon="tag" data-ajax="false" onclick="overview('4d4b7105d754a06376d81259')">Bar</a></li>
+<!-- 						<li><a href="javascript:void(0)" data-icon="star" data-ajax="false" onclick="overview('4bf58dd8d48988d145941735')">中華</a></li> -->
 					</ul>
 				</div>
 			</div>
 			<div data-role="content" data-theme="a">
-				<h5>Safariは「設定 > プライバシー > 位置情報サービス > Safari」をONにする。</h5>
+<!-- 				<h5>Safariは「設定 > プライバシー > 位置情報サービス > Safari」をONにする。</h5> -->
 				<div id="foursquare">loading...</div>
 			</div>
 		</div><!--end of data-role="page"-->

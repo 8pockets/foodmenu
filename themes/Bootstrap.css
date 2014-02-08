@@ -145,8 +145,10 @@ label.ui-btn {
 .ui-btn-icon-top:after,
 .ui-btn-icon-bottom:after,
 .ui-btn-icon-notext:after {
-	background-color: #666666 /*{global-icon-color}*/;
-	background-color: rgba(0,0,0,.4) /*{global-icon-disc}*/;
+/*
+	background-color: #666666;
+	background-color: rgba(0,0,0,.4);
+*/
 	background-position: center center;
 	background-repeat: no-repeat;
 	-webkit-border-radius: 1em;
@@ -1038,7 +1040,7 @@ html head + body .ui-body-e.ui-focus {
 html .ui-bar-f .ui-bar-inherit,
 html .ui-body-f .ui-bar-inherit,
 html body .ui-group-theme-f .ui-bar-inherit {
-	background: #f39c12 /*{f-bar-background-color}*/;
+	background: #fb7022 /*{f-bar-background-color}*/;
 	border-color: #2A2A2A /*{f-bar-border}*/;
 	color: #ffffff /*{f-bar-color}*/;
 	text-shadow: 0 /*{f-bar-shadow-x}*/ 0 /*{f-bar-shadow-y}*/ 0 /*{f-bar-shadow-radius}*/ #000000 /*{f-bar-shadow-color}*/;
@@ -1111,7 +1113,7 @@ html .ui-bar-f .ui-btn:visited,
 html .ui-body-f .ui-btn:visited,
 html body .ui-group-theme-f .ui-btn:visited,
 html head + body .ui-btn.ui-btn-f:visited {
-	background: #f39c12 /*{f-bup-background-color}*/;
+	background: #fb7022 /*{f-bup-background-color}*/;
 	border-color: #f28f00 /*{f-bup-border}*/;
 	color: #ffffff /*{f-bup-color}*/;
 	text-shadow: undefined /*{f-bup-shadow-x}*/ undefined /*{f-bup-shadow-y}*/ undefined /*{f-bup-shadow-radius}*/ undefined /*{f-bup-shadow-color}*/;
