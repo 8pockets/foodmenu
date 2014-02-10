@@ -4,7 +4,6 @@ function overview(id){
 	var venues_id =[];
 	navigator.geolocation.getCurrentPosition(
 		function getvenue(position){
-			$("#foursquare").text("loading...");
 			var search = 'https://api.foursquare.com/v2/venues/search?client_id=YFVDPCILKUGXBIPYONW1YQCNF1GOXTUUD3QR2MEUZITSDO50&client_secret=UTCBXKMCHNO2VHY5AABMD4TZ53EBB5GG0H1BLDXENO1GERM2&v=20140201&ll='+position.coords.latitude+','+position.coords.longitude;
 			//var search = 'https://api.foursquare.com/v2/venues/search?client_id=YFVDPCILKUGXBIPYONW1YQCNF1GOXTUUD3QR2MEUZITSDO50&client_secret=UTCBXKMCHNO2VHY5AABMD4TZ53EBB5GG0H1BLDXENO1GERM2&v=20140201&ll=35.66596084859448,139.7313094139099';
 			
