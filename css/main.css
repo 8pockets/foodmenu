@@ -1,3 +1,7 @@
+body{
+	margin: 0;
+}
+
 h5{
 	margin: 0;
 	padding: 0;
@@ -11,6 +15,7 @@ h5{
 	margin:3px;
 	width: 148px;
 }
+
 .image img{
 	width:148px;
 	height:148px;
@@ -49,4 +54,9 @@ h5{
 	background-position: 0px 3px;
 	width: 56px;
 	text-align: right;
+}
+#map_canvas{
+	width: 100%;
+	height: 300px;
+	margin-bottom:4px;
 }

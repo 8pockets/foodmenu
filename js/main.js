@@ -38,7 +38,7 @@ function overview(id){
 						$("<div>").addClass("place-distance").append(venues_distance).append("m")).append(
 						$("<div>").addClass("place-count").append(venues_count)));
 	
-						getphoto(i,venues_id);
+						getphoto(i,venues_id,venues_name,venues_lat,venues_lng);
 					})//end of each
 				},//end of success
 				error: function(data, textStatus, jqXHR) {
@@ -49,7 +49,7 @@ function overview(id){
 	);
 }
 
-function getphoto(i,venues_id){
+function getphoto(i,venues_id,venues_name,venues_lat,venues_lng){
 	$.ajax({
 		type: 'GET',
 		async: true,
@@ -58,47 +58,17 @@ function getphoto(i,venues_id){
 		success: function(data, textStatus, jqXHR){
 			if (data.response.photos.count != false){
 				var prefix = data.response.photos.items[0].prefix;
-				var suffix = data.response.photos.items[0].suffix;
-				var url = prefix+'148x148'+suffix;
+					suffix = data.response.photos.items[0].suffix;
+					image = prefix+'148x148'+suffix;
+					url = 'info.html?'+venues_id[i]+'&'+venues_name+'&'+venues_lat+'&'+venues_lng;
 
 				$('#foursquare .'+venues_id[i]).prepend(
 				$("<div>").addClass("image").append(
-				$("<a>").attr("href", 'info.html').append(
-				//$("<a>").attr("href", 'javascript:void(0)').attr("onclick", "info('"+venues_id[i]+"')").append(
-				$("<img>").attr("src", url))));
+				$("<a>").attr("href", url).attr("target", '_blank').append(
+				$("<img>").attr("src", image))));
 			}else{
 				var undefied_photo = 'img/undefiened.png';
 				$('#foursquare .'+venues_id[i]).prepend(
-				$("<div>").addClass("image").append(
-				$("<img>").attr("src", undefied_photo)));
-			}//end of if
-		},//end of success
-		error: function(data, textStatus, jqXHR) {
-			$("#foursquare").text("写真取得でエラーが発生しました。再度ブラウザを読み込んでください。");
-		}
-	});//end of ajax
-}
-
-function info(venue_id){
-	console.log(venue_id);
-	$.ajax({
-		type: 'GET',
-		async: true,
-		url:'https://api.foursquare.com/v2/venues/'+venue_id+'/photos?client_id=YFVDPCILKUGXBIPYONW1YQCNF1GOXTUUD3QR2MEUZITSDO50&client_secret=UTCBXKMCHNO2VHY5AABMD4TZ53EBB5GG0H1BLDXENO1GERM2&v=20140201',
-		dataType:'json',
-		success: function(data, textStatus, jqXHR){
-			if (data.response.photos.count != false){
-				for(var c=0;c<=30;c++){
-					var prefix = data.response.photos.items[c].prefix;
-					var suffix = data.response.photos.items[c].suffix;
-					var info_url = prefix+'148x148'+suffix;
-					$('#info_photo').append(
-					$("<div>").addClass("image").append(
-					$("<img>").attr("src", info_url)));
-				}
-			}else{
-				var undefied_photo = 'img/undefiened.png';
-				$('#info_photo').append(
 				$("<div>").addClass("image").append(
 				$("<img>").attr("src", undefied_photo)));
 			}//end of if
