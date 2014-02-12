@@ -1,14 +1,19 @@
 body{
 	margin: 0;
 }
-
 h5{
 	margin:0 !important;
 	padding:0;
 }
+hr{
+	margin: 20px 0 30px 0;
+}
 .title{
 	color: #fff !important;
 	text-decoration: none;
+}
+.current{
+	margin: 0 0 20px 0;
 }
 .ui-content{
 	background-color:#ecf0f1 !important;

@@ -10,13 +10,11 @@ function form(id){
 		url:'http://maps.googleapis.com/maps/api/geocode/json?address='+venue_name+'&sensor=false',
 		dataType:'json',
 		success: function(data, textStatus, jqXHR){
-		console.log(data.results.length);
 		if (data.results.length == 1){
 			var lat = data.results[0].geometry.location.lat;
 			var lng = data.results[0].geometry.location.lng;
 			getvenue(foodtype, lat, lng);
 		}else{
-			console.log('ok');
 			for(var k=0;k<data.results.length;k++){
 				var lat = data.results[k].geometry.location.lat;
 				var lng = data.results[k].geometry.location.lng;
@@ -34,10 +32,16 @@ function form(id){
 }
 
 function getvenue(foodtype, lat, lng){
+	
 	var search = 'https://api.foursquare.com/v2/venues/search?client_id=YFVDPCILKUGXBIPYONW1YQCNF1GOXTUUD3QR2MEUZITSDO50&client_secret=UTCBXKMCHNO2VHY5AABMD4TZ53EBB5GG0H1BLDXENO1GERM2&v=20140201&ll='+lat+','+lng;
 	var venues_id =[];
 	
-
+	$("#all").attr({onclick: "getvenue('4d4b7105d754a06374d81259',"+lat+","+lng+")"});
+	$("#dining").attr({onclick: "getvenue('4bf58dd8d48988d1c4941735',"+lat+","+lng+")"});
+	$("#noodle").attr({onclick: "getvenue('4bf58dd8d48988d1d1941735',"+lat+","+lng+")"});
+	$("#cafe").attr({onclick: "getvenue('4bf58dd8d48988d16d941735,4bf58dd8d48988d128941735,4bf58dd8d48988d1dc931735',"+lat+","+lng+")"});
+	$("#bar").attr({onclick: "getvenue('4d4b7105d754a06376d81259',"+lat+","+lng+")"});
+	
 	$.ajax({
 		type: 'GET',
 		async: true,
