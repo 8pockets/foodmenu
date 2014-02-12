@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="apple-touch-icon-precomposed" href="img/smart-icon.png"/>
+		<title>Foodly</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="themes/Bootstrap.css">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	</head>
+	<body onload="overview('4d4b7105d754a06374d81259')">
+		<div data-role="page" data-theme="f">
+			<div data-role="header" data-position="inline">
+				<h1><a href="./" data-ajax="false" class="title">Foodly</a></h1>
+				<div data-role="navbar">
+					<ul id="navi">
+						<li><a href="javascript:void(0)" data-icon="home" data-ajax="false" onclick="overview('4d4b7105d754a06374d81259')">All</a></li>
+						<li><a href="javascript:void(0)" data-icon="shop" data-ajax="false" onclick="overview('4bf58dd8d48988d1c4941735')">Dining</a></li>
+						<li><a href="javascript:void(0)" data-icon="star" data-ajax="false" onclick="overview('4bf58dd8d48988d1d1941735')">麺</a></li>
+						<li><a href="javascript:void(0)" data-icon="comment" data-ajax="false" onclick="overview('4bf58dd8d48988d16d941735,4bf58dd8d48988d128941735,4bf58dd8d48988d1dc931735')">Cafe</a></li>
+						<li><a href="javascript:void(0)" data-icon="tag" data-ajax="false" onclick="overview('4d4b7105d754a06376d81259')">Bar</a></li>
+<!-- 						<li><a href="javascript:void(0)" data-icon="star" data-ajax="false" onclick="overview('4bf58dd8d48988d145941735')">中華</a></li> -->
+					</ul>
+				</div>
+			</div>
+			<div data-role="content" data-theme="a">
+<!-- 				<h5>Safariは「設定 > プライバシー > 位置情報サービス > Safari」をONにする。</h5> -->
+				<div id="foursquare"><h5>Safariは「設定 > プライバシー > 位置情報サービス > Safari」をONにして下さい。</h5><img src="img/load.gif" alt="loading..." width="200px" id="loading"></div>
+			</div>
+			<footer>
+				<div id="byfoursquare"><img src="img/poweredByFoursquare.png"></div>
+				<div id="copyright">Copyright &copy;
+					<script type="text/javascript">
+						document.write(new Date().getFullYear());
+					</script>
+					8pockets All Rights Reserved.
+				</div>
+			</footer>
+		</div><!--end of data-role="page"-->
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+	</body>
+</html>

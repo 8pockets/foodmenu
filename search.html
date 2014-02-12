@@ -10,21 +10,22 @@
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" />
 		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 	</head>
-	<body>
+	<body onload="form('4d4b7105d754a06374d81259')">
 		<div data-role="page" data-theme="f">
 			<div data-role="header" data-position="inline">
 				<h1><a href="./" data-ajax="false" class="title">Foodly</a></h1>
+				<div data-role="navbar">
+					<ul id="navi">
+						<li><a href="javascript:void(0)" data-icon="home" data-ajax="false" onclick="form('4d4b7105d754a06374d81259')">All</a></li>
+						<li><a href="javascript:void(0)" data-icon="shop" data-ajax="false" onclick="form('4bf58dd8d48988d1c4941735')">Dining</a></li>
+						<li><a href="javascript:void(0)" data-icon="star" data-ajax="false" onclick="form('4bf58dd8d48988d1d1941735')">麺</a></li>
+						<li><a href="javascript:void(0)" data-icon="comment" data-ajax="false" onclick="form('4bf58dd8d48988d16d941735,4bf58dd8d48988d128941735,4bf58dd8d48988d1dc931735')">Cafe</a></li>
+						<li><a href="javascript:void(0)" data-icon="tag" data-ajax="false" onclick="form('4d4b7105d754a06376d81259')">Bar</a></li>
+					</ul>
+				</div>
 			</div>
 			<div data-role="content" data-theme="a">
-				<a href="current.html" data-role="button" data-theme="f" data-icon="delete" class="ui-link ui-btn ui-btn-f ui-icon-location ui-btn-icon-left ui-shadow ui-corner-all" role="button" data-ajax="false">現在地から検索</a>
-				<hr>
-				<form action="search.html" method="get" id="form" data-ajax="false">
-						<input type="text" name="s" id="name" value="" placeholder="東京タワー">
-					<button type="submit" data-theme="a" class=" ui-btn ui-btn-a ui-shadow ui-corner-all">検索</button>
-				</form>
-				<div class="operate">
-					<h5>Safariは「設定 > プライバシー > 位置情報サービス > Safari」をONにする。</h5>
-				</div>
+				<div id="foursquare"><h5>Safariは「設定 > プライバシー > 位置情報サービス > Safari」をONにして下さい。</h5><img src="img/load.gif" alt="loading..." width="200px" id="loading"></div>
 			</div>
 			<footer>
 				<div id="byfoursquare"><img src="img/poweredByFoursquare.png"></div>

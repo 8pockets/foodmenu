@@ -1041,7 +1041,7 @@ html .ui-bar-f .ui-bar-inherit,
 html .ui-body-f .ui-bar-inherit,
 html body .ui-group-theme-f .ui-bar-inherit {
 	background: #fb7022 /*{f-bar-background-color}*/;
-	border-color: #2A2A2A /*{f-bar-border}*/;
+	border-color: #fb7022 /*{f-bar-border}*/;
 	color: #ffffff /*{f-bar-color}*/;
 	text-shadow: 0 /*{f-bar-shadow-x}*/ 0 /*{f-bar-shadow-y}*/ 0 /*{f-bar-shadow-radius}*/ #000000 /*{f-bar-shadow-color}*/;
 	font-weight: bold;
