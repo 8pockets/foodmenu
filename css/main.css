@@ -65,6 +65,14 @@ h5{
 	height: 300px;
 	margin-bottom:4px;
 }
+.selectplace{
+	margin: 0 0 20px 0;
+}
+.selectplace > a{
+	color: #8c929c !important;
+	text-decoration: none;
+	font-weight: normal !important;
+}
 .target{
 	background-color: #fff;
 	padding: 5px 0 5px 5px;
